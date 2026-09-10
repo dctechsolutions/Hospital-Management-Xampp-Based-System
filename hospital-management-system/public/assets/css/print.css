@@ -1,0 +1,206 @@
+/**
+ * Print & A4 PDF Stylesheet
+ * Yasmeen Maternity and Medical Center (R-85647)
+ * Developed_By_DCtechsolutions
+ */
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 12mm 15mm 15mm 15mm;
+    }
+
+    body {
+        background: #ffffff !important;
+        color: #111827 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 11pt !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Hide non-printable elements */
+    .no-print,
+    .navbar,
+    .sidebar,
+    .btn,
+    .alert,
+    .pagination,
+    .filter-card,
+    .nav-tabs,
+    .modal {
+        display: none !important;
+    }
+
+    /* Common Report Container */
+    .report-container,
+    .printable-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Common Header Layout */
+    .common-report-header {
+        display: block !important;
+        margin-bottom: 12px !important;
+        page-break-inside: avoid !important;
+    }
+
+    .report-header-grid {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 16px !important;
+        border-bottom: 2px solid #0f766e !important;
+        padding-bottom: 10px !important;
+    }
+
+    .report-logo-col {
+        width: 75px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .report-logo {
+        width: 70px !important;
+        height: 70px !important;
+        object-fit: contain !important;
+    }
+
+    .report-title-col {
+        flex-grow: 1 !important;
+    }
+
+    .hospital-name-primary {
+        font-size: 20pt !important;
+        font-weight: 800 !important;
+        color: #047857 !important;
+        margin: 0 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.1 !important;
+    }
+
+    .hospital-name-secondary {
+        font-size: 12pt !important;
+        font-weight: 700 !important;
+        color: #1f2937 !important;
+        margin: 2px 0 !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    .hospital-ref-badge {
+        font-size: 9pt !important;
+        color: #4b5563 !important;
+    }
+
+    .hospital-ref-badge .ref-number {
+        font-weight: 700 !important;
+        color: #0f766e !important;
+    }
+
+    .report-meta-bar {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: flex-end !important;
+        margin-top: 8px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .report-document-title {
+        font-size: 13pt !important;
+        font-weight: bold !important;
+        color: #111827 !important;
+        margin: 0 !important;
+        text-transform: uppercase !important;
+    }
+
+    .report-document-subtitle {
+        font-size: 9pt !important;
+        color: #4b5563 !important;
+        margin: 2px 0 0 0 !important;
+    }
+
+    .report-date-label {
+        font-size: 8.5pt !important;
+        color: #6b7280 !important;
+    }
+
+    .report-date-value {
+        font-size: 8.5pt !important;
+        font-weight: 600 !important;
+        color: #111827 !important;
+    }
+
+    .report-divider {
+        display: none !important;
+    }
+
+    /* Tables formatting */
+    table.report-table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin-top: 10px !important;
+        margin-bottom: 15px !important;
+        font-size: 9.5pt !important;
+    }
+
+    table.report-table th,
+    table.report-table td {
+        border: 1px solid #d1d5db !important;
+        padding: 5px 8px !important;
+        vertical-align: middle !important;
+    }
+
+    table.report-table th {
+        background-color: #f3f4f6 !important;
+        font-weight: bold !important;
+        color: #111827 !important;
+        text-align: left !important;
+    }
+
+    /* Common Footer Layout */
+    .common-report-footer {
+        display: block !important;
+        margin-top: 20px !important;
+        border-top: 1px solid #9ca3af !important;
+        padding-top: 8px !important;
+        font-size: 8.5pt !important;
+        page-break-inside: avoid !important;
+    }
+
+    .report-footer-grid {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+    }
+
+    .footer-line {
+        margin: 0 0 2px 0 !important;
+        color: #374151 !important;
+    }
+
+    .developer-tag {
+        font-weight: 600 !important;
+        color: #4b5563 !important;
+        font-size: 8pt !important;
+    }
+
+    /* Prevent breaking inside table rows */
+    tr {
+        page-break-inside: avoid !important;
+    }
+
+    thead {
+        display: table-header-group !important;
+    }
+
+    tfoot {
+        display: table-footer-group !important;
+    }
+}

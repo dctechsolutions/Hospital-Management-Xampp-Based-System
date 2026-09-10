@@ -1,0 +1,6 @@
+{
+  "name": "Hospital Management System - Yasmeen Maternity and Medical Center",
+  "description": "Hospital Management System for Yasmeen Maternity and Medical Center (R-85647) featuring Patient Registration, Attendance, Pharmacy Stock & Sales, and A4 Printable Reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

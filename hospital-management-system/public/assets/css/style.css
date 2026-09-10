@@ -1,0 +1,463 @@
+/**
+ * Yasmeen Maternity and Medical Center - Main Stylesheet
+ * Reference: R-85647
+ * Clean, lightweight, professional hospital UI
+ * Developed_By_DCtechsolutions
+ */
+
+:root {
+    --primary: #047857;
+    --primary-hover: #065f46;
+    --primary-light: #ecfdf5;
+    --secondary: #0f766e;
+    --dark: #0f172a;
+    --gray-900: #111827;
+    --gray-700: #374151;
+    --gray-500: #6b7280;
+    --gray-300: #d1d5db;
+    --gray-100: #f3f4f6;
+    --gray-50: #f8fafc;
+    --danger: #dc2626;
+    --danger-light: #fef2f2;
+    --warning: #d97706;
+    --warning-light: #fffbeb;
+    --success: #16a34a;
+    --border-radius: 6px;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--gray-900);
+    background-color: #f1f5f9;
+}
+
+/* Header & Navigation */
+.navbar-hospital {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.brand-text-main {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.brand-text-sub {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gray-700);
+    letter-spacing: 0.3px;
+}
+
+.brand-ref {
+    font-size: 11px;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 7px 14px;
+    color: var(--gray-700);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--gray-100);
+    color: var(--primary);
+}
+
+.nav-link.active {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-badge {
+    display: inline-block;
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-300);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-700);
+    text-transform: capitalize;
+}
+
+/* Page Layout */
+.main-container {
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.page-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    border-color: var(--gray-300);
+    color: var(--gray-700);
+}
+
+.btn-secondary:hover {
+    background-color: var(--gray-100);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: #ffffff;
+}
+
+.btn-sm {
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+/* Forms */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.form-control {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+    color: var(--gray-900);
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(4, 120, 87, 0.15);
+}
+
+.form-control:read-only {
+    background-color: var(--gray-100);
+    cursor: not-allowed;
+}
+
+/* Tables */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+table.data-table th {
+    background-color: var(--gray-50);
+    color: var(--gray-700);
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table.data-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    color: var(--gray-900);
+}
+
+table.data-table tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.badge-warning {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.badge-danger {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.badge-info {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+/* Alerts */
+.alert {
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+}
+
+.alert-danger {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+/* Report View Screen Styling */
+.report-paper {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.common-report-header {
+    margin-bottom: 20px;
+}
+
+.report-header-grid {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.report-logo-col {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.report-logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.report-title-col {
+    flex-grow: 1;
+}
+
+.hospital-name-primary {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.hospital-name-secondary {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-top: 2px;
+}
+
+.hospital-ref-badge {
+    font-size: 12px;
+    color: var(--gray-700);
+    margin-top: 2px;
+}
+
+.hospital-ref-badge .ref-number {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.report-meta-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 14px;
+}
+
+.report-document-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+.report-document-subtitle {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-top: 2px;
+}
+
+.report-timestamp-section {
+    font-size: 12px;
+    color: var(--gray-500);
+}
+
+.report-date-value {
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.common-report-footer {
+    margin-top: 30px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 12px;
+    color: var(--gray-700);
+}
+
+.report-footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-line {
+    margin-bottom: 2px;
+}
+
+.developer-tag {
+    font-weight: 600;
+    color: var(--gray-500);
+    font-size: 11px;
+}

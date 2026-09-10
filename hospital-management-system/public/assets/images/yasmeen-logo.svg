@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360">
+  <defs>
+    <linearGradient id="gradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="gradAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle Ring -->
+  <circle cx="180" cy="180" r="168" fill="none" stroke="#0d9488" stroke-width="6" stroke-dasharray="10 5" />
+  <circle cx="180" cy="180" r="154" fill="#ffffff" stroke="#047857" stroke-width="4" />
+
+  <!-- Inner Soft Medical Circle -->
+  <circle cx="180" cy="180" r="132" fill="#f0fdfa" />
+
+  <!-- Medical Cross Accent in Background -->
+  <rect x="165" y="70" width="30" height="70" rx="6" fill="#ccfbf1" />
+  <rect x="145" y="90" width="70" height="30" rx="6" fill="#ccfbf1" />
+
+  <!-- Mother and Child Maternity Symbol -->
+  <!-- Mother Body Arc -->
+  <path d="M 140 250 C 130 220 135 170 165 150 C 180 140 195 145 200 155 C 205 165 195 180 180 185 C 160 192 155 210 160 250 Z" 
+        fill="url(#gradPrimary)" />
+  
+  <!-- Mother Head -->
+  <circle cx="175" cy="130" r="22" fill="url(#gradPrimary)" />
+
+  <!-- Infant/Baby Arc -->
+  <path d="M 182 205 C 190 195 205 195 215 205 C 225 215 220 235 200 245 C 188 240 180 225 182 205 Z" 
+        fill="url(#gradAccent)" />
+  
+  <!-- Infant Head -->
+  <circle cx="202" cy="185" r="14" fill="url(#gradAccent)" />
+
+  <!-- Caring Supportive Hand / Leaf Swash -->
+  <path d="M 115 235 C 125 270 170 285 215 275 C 240 270 255 255 260 235 C 240 250 200 260 150 245 C 130 240 120 235 115 235 Z" 
+        fill="#059669" />
+
+  <!-- Small Plus Medical Badges -->
+  <path d="M 235 110 H 255 M 245 100 V 120" stroke="#0d9488" stroke-width="4" stroke-linecap="round" />
+  <path d="M 105 150 H 125 M 115 140 V 160" stroke="#0d9488" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Star / Spark of Care -->
+  <circle cx="245" cy="155" r="5" fill="#f59e0b" />
+</svg>
